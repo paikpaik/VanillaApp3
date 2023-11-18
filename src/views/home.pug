@@ -9,5 +9,11 @@ html(lang="en")
     header 
       h1 VanillaApp3
     main 
-      h2 Welcome to VanillaApp3
+      form#nick
+        input(type="test", placeholder="choose a nickname", required)
+        button Save
+      ul 
+      form#message
+        input(type="test", placeholder="write a msg", required)
+        button Send
     script(src="/public/js/app.js")
