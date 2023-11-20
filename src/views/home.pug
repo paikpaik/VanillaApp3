@@ -9,6 +9,17 @@ html(lang="en")
     header 
       h1 VanillaApp3
     main 
+      div#welcome_v
+        form
+          input(placeholder="room name", required, type="text")
+          button Enter Video Room
+      div#call
+        div#myStream
+          video#myFace(autoplay, playsinline, width="400", height="400")
+          button#mute Mute
+          button#camera Turn Camera Off
+          select#cameras
+        video#peerFace(autoplay, playsinline, width="400", height="400")
       div#welcome
         form
           input(placeholder="room name", required, type="text")
